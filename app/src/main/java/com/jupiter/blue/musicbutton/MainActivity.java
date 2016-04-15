@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(hivesMP.isPlaying()) {
-                   hivesMP.pause();
+                   hivesMP.stop();
+                    hivesMP.prepareAsync();
                 } else {
+
                     hivesMP.start();
                 }
 
